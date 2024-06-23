@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    
+</head>
+<body background="{{ url_for('static', filename='img/page2.jpg') }}"></body>
+<body>
+    <div class="image-container">
+        <h1>Characters List</h1>
+        <div class="card-grid">
+            {% for character in characters %}
+                <div class="card-item">
+                    <img src="{{ url_for('static', filename=character[3])}}" 
+                        alt="{{ character[2] }}" 
+                        clevel="{{character[0]}}"
+                        cpotent="{{character[1]}}"
+                        csk1="{{character[4]}}"
+                        csk2="{{character[5]}}"
+                        csk3="{{character[6]}}"
+                        ctalent="{{character[7]}}"
+                        class="popup-image">
+                           
+                    <h3>{{ character[2] }}</h3>
+                </div>
+                
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="popup-overlay" ></div>
+    <div class="popup-content" id="popup-content">
+        <div class="popup-image-container">
+            <img src="" alt="" id="popup-image" width="300px" >
+        </div>
+        <div class="popup-name" id="popup-name"> </div>
+        <div class="popup-details" id="popup-details">
+            <!-- Text will be dynamically inserted here -->
+            <level id="popup-level"></level><br>
+            <potent id="popup-potent"></potent><br>
+            <sk1 id="popup-sk1"></sk1><br>
+            <sk2 id="popup-sk2"></sk2><br>
+            <sk3 id="popup-sk3"></sk3><br>
+            <talent id="popup-talent"></talent>
+        </div>
+    </div>
+
+    <div>
+        <button1 onclick="location.href='/logout'">&lt&lt Exit</button1>
+    </div>
+
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}">      
+    </script>
+</body>
+</html>

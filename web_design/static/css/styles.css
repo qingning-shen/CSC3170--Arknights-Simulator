@@ -1,0 +1,281 @@
+/* Reset some browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 基础样式 */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  background-size: cover;
+   
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: #ffffff00;
+  
+  }
+  
+  /* Login form styles */
+  form {
+    margin-top: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group label {
+    flex-basis: 60px;
+    margin-right: 7px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 200px;
+    margin-left: auto;
+}
+
+  label{
+    width: 100%;
+    color: white;
+  }
+  input {
+    width: 100%;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 8px;
+    background-color: #c7c7c7;
+    border: 2px solid #808080;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #555555;
+    color: white;
+    border: 2px solid #363636;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+
+  button1 {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button1:hover {
+    opacity: 1;
+  }
+
+  button2 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button2:hover {
+    opacity: 1;
+  }
+
+
+  /* Welcome page styles */
+  h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+
+  title1 {
+    line-height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: 40px;
+    text-align: left;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  text1 {
+    line-height: 80px;
+    position: absolute;
+    top: 140px;
+    left: 90px;
+    font-size: 30px;
+    text-align: left;
+    color: #ffffff;
+  }
+  
+  /* Card list styles */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .card-item {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color:#ffffffa0
+  }
+  
+  .card-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-item h3 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+    
+  .image-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0px;
+    
+}
+
+/* Popup styles */
+.popup-image {
+    cursor: pointer;
+    /* transition: transform 0.3s ease-in-out; */
+   
+    
+}
+
+/* Overlay and popup styles */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+.popup-content {
+    display: none;
+    position: fixed;
+    margin: 10% auto;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 80%;
+    background-image: url('../img/ZZZ.jpg'); /* 设置背景图片路径 */
+    background-size: cover; /* 调整图片以填充整个弹窗，保持其比例 */
+    background-position: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 101;
+
+    
+
+}
+
+.popup-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popup-name {
+    text-align: center;
+    margin-left: 250px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+    
+}
+/* Popup details styling */
+.popup-details {
+  padding: 1rem;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  line-height: 35px;
+  border-top: #333 1px solid;
+  font-size: 20px;
+  color: #333;
+  padding-left: 270px;
+  
+}
+
+
+/* Rotate animation */
+@keyframes rotate {
+    0% {
+        transform: scale(0) rotate(0deg);
+    }
+    ˜50% {
+        transform: scale(1.1) rotate(30deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+/* @keyframes rotate {
+  0% {
+    transform: scale(0) translateX(-100%) rotate(-30deg);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(1) translateX(-50%) rotate(0deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1) translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+} */
+
+.popup-content.show {
+    display: block;
+    animation: rotate 0.5s ease-in-out both;
+}
+
