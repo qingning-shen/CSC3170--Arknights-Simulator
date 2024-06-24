@@ -6,16 +6,16 @@ This repository includes the `MySQL` source code of the database system and the 
 
 ## Contents
 
-- [Brief intro](#Brief intro)
-- [File structure](#File structure)
+- [Brief_intro](#Brief_intro)
+- [File_structure](#File_structure)
 - [Performance](#Performance)
 
 
-## Brief intro
+## Brief_intro
 
 This repository includes the `MySQL` source code of the database system and the Python-flask implementation of a simple client.
 
-## File structure
+## File_structure
 
 - **database**
   - `create.sql`: Create schema and relationship
