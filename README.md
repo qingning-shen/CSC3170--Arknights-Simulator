@@ -4,4 +4,5 @@
 
 This repository includes the `MySQL` source code of the database system and the Python-flask implementation of a simple client.
 
-https://github.com/qingning-shen/CSC3170---Arknights-Simulator/assets/164154910/50300288-d39c-4af8-abe3-a5fa46e2175e
+Here is the web page:
+https://github.com/qingning-shen/CSC3170---Arknights-Simulator/assets/164154910/264dc592-7466-4bc5-9c1a-fc23e1d49e30
